@@ -188,7 +188,7 @@ document.onkeydown=function(e){
 		if(ca.length>now)ca[now]=copy(a), cb[now]=copy2(b);
 		else ca.push(copy(a)), cb.push(copy2(b));
 		++now;
-		if(s=='?')alert('Press WASD to move.\nEnter a number to set the value.\n(A, C, G, N)=(0, 1, 2, 3)\nEnter b to play a boss\'s turn.\nEnter p to play a players\' turn.');
+		if(s=='?')alert('Press WASD to move.\nEnter a number to set the value.\n(A, C, G, N)=(0, 1, 2, 3)\nEnter b to play a boss\'s turn.\nEnter p to play a players\' turn.\nPress Z to undo.\nPress Q to redo.');
 		else if(s=='b')boss();
 		else if(s=='p')player();
 		else if(py<0)b[px]=Number(s);
